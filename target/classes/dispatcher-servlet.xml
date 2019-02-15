@@ -12,7 +12,9 @@
 
 	
 	<mvc:annotation-driven/>
-	<context:component-scan base-package="webApp/webSample" />
+	<context:component-scan base-package="webApp" />
+	<mvc:default-servlet-handler/>
+	
 	  
 	<bean id="viewResolver"	class="org.springframework.web.servlet.view.InternalResourceViewResolver" >
         <property name="prefix">
